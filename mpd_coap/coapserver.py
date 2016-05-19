@@ -6,11 +6,11 @@ from configparser import ConfigParser
 import aiocoap.resource as resource
 import aiocoap
 import mpd
-import json_serializer
 
 
 CONFIGPATH = 'mpd.conf'
 config = ConfigParser()
+
 
 def get_client():
     client = mpd.MPDClient()
